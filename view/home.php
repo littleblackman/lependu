@@ -15,7 +15,7 @@
 
     <!-- formulaire de saisie--->
     <?php if(!isset($stop)):?>
-        <form action="index.php" method="post">
+        <form action="index.php?action=home" method="post">
             <input type="text" name="letter" />
             <input type="submit" value="proposez"/>
         </form>
@@ -33,7 +33,7 @@
 </div>
 <br style="clear: both"/>
 <br/>
-<a href="index.php?restart=1">Recommencer</a>
+<a href="index.php?action=restart">Recommencer</a>
 
 
 <?php $content = ob_get_clean();?>
