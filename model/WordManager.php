@@ -13,7 +13,7 @@ class WordManager
         } catch (Exception $e) {
             print_r($e);
         }
-        $this->bdd = $bdd;
+        $this-> bdd = $bdd;
     }
 
 
