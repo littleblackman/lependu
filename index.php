@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(isset($_GET['restart'])) session_destroy();
+if(isset($_GET['restart'])) session_unset();
 
 include_once('lib/bdd_functions.php');
 include_once('lib/helpers.php');
@@ -114,7 +114,7 @@ echo '<br/>avancement:'.$avancement;
     <?php if(!isset($stop)):?>
         <form action="index.php" method="post">
             <input type="text" name="letter" />
-            <input type="submit" value="ajouter"/>
+            <input type="submit" value="proposez"/>
         </form>
     <?php else:?>
         <br/>
