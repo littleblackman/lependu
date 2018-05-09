@@ -3,7 +3,6 @@ if(isset($_GET['restart'])) session_unset();
 
 include_once(MODEL.'WordManager.php');
 
-include_once(LIB.'bdd_functions.php');
 include_once(LIB.'helpers.php');
 
 
